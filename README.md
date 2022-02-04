@@ -7,11 +7,11 @@ A sample that use CoreAdmin at the backend. And NextJS for the frontend (with se
 ## ASP.net API
 Open the ASP.net API project, build and start it.
 
-Swagger: https://localhost:7069/swagger/index.html
-CoreAdmin: https://localhost:7069/CoreAdmin
+Swagger: https://localhost:7069/swagger/index.html   
+CoreAdmin: https://localhost:7069/CoreAdmin    
 
 You need to create a least one blog post from CoreAdmin which is Public (`true`).
 
 ## NextJS Frontend
-Go inside `nextjs-blog`, run `npm i` and `npm run dev`.
+Go inside `nextjs-blog`, run `npm i` and `npm run dev`.   
 Go to http://localhost:3000
