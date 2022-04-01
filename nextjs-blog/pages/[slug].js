@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { Converter } from 'showdown'
 
 export const getServerSideProps = async (context) => {
     const slug = context.params.slug;
@@ -11,10 +10,6 @@ export const getServerSideProps = async (context) => {
     })
 
     const blogPost = await req.json()
-
-    const converter = new Converter()
-    blogPost.content = converter.makeHtml(blogPost.content)
-
     return {
         props: {
             post: blogPost
@@ -39,7 +34,7 @@ export default function Home({ post }) {
                         At {new Date(post.created).toLocaleString()}
                     </p>
 
-                    <div dangerouslySetInnerHTML={{ __html: post.content }}>
+                    <div dangerouslySetInnerHTML={{ __html: post.rawHTML }}>
                     </div>
                 </article>
             </main>
