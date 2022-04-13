@@ -22,6 +22,7 @@ namespace CoreAdmin_BlogSample.Models
         public string? Content { get; set; }
 
         [Display(AutoGenerateField = false)]
+        [ScaffoldColumn(false)]
         public string? RawHTML { get; set; }
 
         public byte[]? CoverImage { get; set; }
