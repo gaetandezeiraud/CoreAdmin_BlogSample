@@ -1,3 +1,5 @@
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 # CoreAdmin_BlogSample
 A sample that use CoreAdmin at the backend. And NextJS for the frontend (with server side rendering).
 
